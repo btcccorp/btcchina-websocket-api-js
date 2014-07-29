@@ -6,9 +6,9 @@
 	socket.emit('subscribe', ['marketdata_cnyltc']);
 	socket.emit('subscribe', ['marketdata_btcltc']);
 	socket.on('connect', function(){
-    	console.log("hello,btcc!");
+    	console.log("Hello,btcc!");
       	socket.on('trade', function (data) {
-        	console.log("trade,hello!");
+        	console.log("Hello,trade!");
            	console.log(data);});
 	});
 </script>
